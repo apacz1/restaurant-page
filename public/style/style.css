@@ -2,4 +2,26 @@ html,
 * {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  height: 5em;
+  background-color: papayawhip;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  border-bottom: 0.1em solid silver;
+}
+body {
+  background-color: papayawhip;
+}
+
+.btn {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
 }
