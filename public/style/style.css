@@ -5,17 +5,22 @@ html,
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  background-image: url("/images/restaurant.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+}
+
 header {
   height: 5em;
-  background-color: papayawhip;
+  background-color: rgb(255, 239, 213, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4em;
   border-bottom: 0.1em solid silver;
-}
-body {
-  background-color: papayawhip;
 }
 
 .btn {
@@ -24,4 +29,84 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.5em;
+}
+
+.restaurantbg {
+  display: flex;
+}
+
+#app {
+  margin: 0 15% 0 15%;
+  background-color: rgb(255, 239, 213, 0.8);
+  min-height: calc(100% - 5.1em);
+}
+
+h1 {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10em;
+  text-align: center;
+}
+
+#app p {
+  margin: 1em 10em 5em;
+}
+
+.slideshow {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.slides {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slides img {
+  max-width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  display: none;
+  margin-bottom: 5em;
+}
+
+.slides img.displaySlide {
+  display: block;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  width: auto;
+  position: absolute;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-bottom: 5em;
+}
+
+.next {
+  right: 15%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 15%;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+  margin: 0 15% 0 15%;
+  background-color: rgb(255, 239, 213, 0.8);
+  text-align: center;
 }
