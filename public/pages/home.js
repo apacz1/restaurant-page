@@ -6,6 +6,9 @@ import {
 } from "../slideshow";
 
 export function homepage() {
+  //clearing content
+  document.querySelector("#app").innerHTML = "";
+
   //creating/selecting html elements
   const h1 = document.createElement("h1");
   const slideshow = document.createElement("div");
