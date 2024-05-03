@@ -22,13 +22,11 @@ function showSlide(index, slides) {
 function prevSlide(slides) {
   slideIndex--;
   showSlide(slideIndex, slides);
-  console.log("XDD");
 }
 
 function nextSlide(slides) {
   slideIndex++;
   showSlide(slideIndex, slides);
-  console.log("XDD");
 }
 
 export { nextSlide, prevSlide, showSlide, initializeSlider };
