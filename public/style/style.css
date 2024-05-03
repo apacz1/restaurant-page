@@ -31,6 +31,14 @@ header {
   font-size: 1.5em;
 }
 
+.btn:hover {
+  border-bottom: 0.1em solid black;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
 .restaurantbg {
   display: flex;
 }
@@ -41,6 +49,7 @@ header {
   min-height: calc(100% - 5.1em);
 }
 
+/*homepage*/
 h1 {
   font-family: "Sevillana", cursive;
   font-weight: 400;
@@ -105,6 +114,46 @@ h1 {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/*menu*/
+h2 {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4em;
+  text-align: center;
+  border-bottom: 0.1px solid silver;
+  padding-top: 0.4em;
+}
+
+.menu-container {
+  max-width: 80%;
+  padding: 0 10%;
+}
+
+.dish-container,
+.drink-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-ingredients,
+.name-capacity {
+  flex: 1 1 auto;
+  padding: 1em 0;
+}
+
+.dish-name,
+.name-capacity {
+  font-size: 2em;
+  border-bottom: 0.1px dashed silver;
+}
+
+.dish-price,
+.drink-price {
+  font-size: 1.5em;
+}
+/*footer*/
 footer {
   margin: 0 15% 0 15%;
   background-color: rgb(255, 239, 213, 0.8);
