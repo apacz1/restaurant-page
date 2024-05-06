@@ -5,4 +5,4 @@ made with vanilla js
 
 # how to run
 
-cd <project folder> -> npm install -> npm run dev
+cd "project folder" -> npm install -> npm run dev
