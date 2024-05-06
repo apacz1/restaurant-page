@@ -153,6 +153,33 @@ h2 {
 .drink-price {
   font-size: 1.5em;
 }
+
+/*about*/
+#grid-container p {
+  margin: 0;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  justify-items: center;
+}
+
+.location {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.location div {
+  display: grid;
+  justify-items: center;
+}
+
+iframe {
+  height: 300px;
+  width: 600px;
+}
 /*footer*/
 footer {
   margin: 0 15% 0 15%;
